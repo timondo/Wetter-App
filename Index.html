@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetter</title>
+    <link rel="stylesheet" href="/Index.css">
+
+</head>
+
+
+<body>
+    <div class="Überschrift">
+  <h1>Herzlich Wilkommen bei Timons Wetter Webseite, diese Webseite ist ein kleines mini Projekt in JS.</h1>
+</div>
+<div class="Suche">
+    <label  id="suche" for="input">Suche:</labl>
+    <input name="input" id="input" placeholder="Ort eingeben..." required>
+    <button type="submit" onclick="getData()" >Suchen</button>
+</div>
+<div class="Daten">
+    <p id="Ort">Lade Ortdaten...</p>
+    <p id="Bundesland">Lade Bundeslanddaten...</p>
+    <p id="Wind">Lade Winddaten...</p>
+    <p id="Temperatur">Lade Temperaturdaten</p>
+    <p id="Wolken">Lade Wolkendaten...</p>
+</div>
+
+
+
+    <script src="/Index.js"></script>
+</body>
+</html>

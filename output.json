@@ -1,0 +1,61 @@
+{
+  "location": {
+    "name": "Stade",
+    "region": "Niedersachsen",
+    "country": "Germany",
+    "lat": 53.6,
+    "lon": 9.4833,
+    "tz_id": "Europe/Berlin",
+    "localtime_epoch": 1755620949,
+    "localtime": "2025-08-19 18:29"
+  },
+  "current": {
+    "last_updated_epoch": 1755620100,
+    "last_updated": "2025-08-19 18:15",
+    "temp_c": 21,
+    "temp_f": 69.8,
+    "is_day": 1,
+    "condition": {
+      "text": "Sunny",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+      "code": 1000
+    },
+    "wind_mph": 10.5,
+    "wind_kph": 16.9,
+    "wind_degree": 313,
+    "wind_dir": "NW",
+    "pressure_mb": 1013,
+    "pressure_in": 29.91,
+    "precip_mm": 0,
+    "precip_in": 0,
+    "humidity": 69,
+    "cloud": 0,
+    "feelslike_c": 21,
+    "feelslike_f": 69.8,
+    "windchill_c": 18.7,
+    "windchill_f": 65.6,
+    "heatindex_c": 18.7,
+    "heatindex_f": 65.6,
+    "dewpoint_c": 13.4,
+    "dewpoint_f": 56,
+    "vis_km": 10,
+    "vis_miles": 6,
+    "uv": 1,
+    "gust_mph": 13.9,
+    "gust_kph": 22.4,
+    "air_quality": {
+      "co": 271.95,
+      "no2": 2.96,
+      "o3": 90,
+      "so2": 0.37,
+      "pm2_5": 6.66,
+      "pm10": 10.175,
+      "us-epa-index": 1,
+      "gb-defra-index": 1
+    },
+    "short_rad": 581.02,
+    "diff_rad": 77.86,
+    "dni": 801.8,
+    "gti": 71.24
+  }
+}
