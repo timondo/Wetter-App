@@ -15,8 +15,9 @@ async function getData() {
       ort: result.location.name,
       bundesland: result.location.region,
       wind: result.current.wind_kph,
-      temperatur: result.current.feelslike_c,
-      wolken: result.current.cloud
+      temperatur: result.current.temp_c,
+      wolken: result.current.cloud,
+      updated: result.current.last_updated
     };
 
     document.getElementById('Ort').innerHTML = "Ort: " + data.ort;
@@ -24,6 +25,7 @@ async function getData() {
     document.getElementById('Wind').innerHTML = "Windgeschwindigkeit: " + data.wind + " km/h";
     document.getElementById('Temperatur').innerHTML = "Temperatur: " + data.temperatur + " °C";
     document.getElementById('Wolken').innerHTML = "Wolken: " + data.wolken + " %";
+    document.getElementById('updated').innerHTML = "Letzte Aktualisierung: " + data.updated;
 
   } catch (error) {
     console.error(error.message);
