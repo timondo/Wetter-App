@@ -2,12 +2,6 @@ async function getData() {
 const ortInput = document.getElementById('input');
 const ort = ortInput.value.trim();
 const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b71140111251908&q=${ort}&aqi=yes`;
-
-
-fetch(url)
-  .then(response => response.json())
-  .then(data => console.log(data));
-
   try {
     const response = await fetch(url);
     if (!response.ok) {
