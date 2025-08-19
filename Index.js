@@ -32,11 +32,11 @@ fetch(url)
 
   } catch (error) {
     console.error(error.message);
-    document.getElementById('Ort').innerHTML = "Beim Laden ist ein Fehler aufgetreten";
-    document.getElementById('Bundesland').innerHTML = "Beim Laden ist ein Fehler aufgetreten";
-    document.getElementById('Wind').innerHTML = "Beim Laden ist ein Fehler aufgetreten";
-    document.getElementById('Temperatur').innerHTML = "Beim Laden ist ein Fehler aufgetreten";
-    document.getElementById('Wolken').innerHTML = "Beim Laden ist ein Fehler aufgetreten";
+    document.getElementById('Ort').innerHTML = "Ort: Beim Laden ist ein Fehler aufgetreten";
+    document.getElementById('Bundesland').innerHTML = "Bundesland: Beim Laden ist ein Fehler aufgetreten";
+    document.getElementById('Wind').innerHTML = "Windgeschwindigkeit: Beim Laden ist ein Fehler aufgetreten";
+    document.getElementById('Temperatur').innerHTML = "Temperatur: Beim Laden ist ein Fehler aufgetreten";
+    document.getElementById('Wolken').innerHTML = "Wolken: Beim Laden ist ein Fehler aufgetreten";
   }
 }
 {}

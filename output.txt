@@ -1,0 +1,61 @@
+{
+  "location": {
+    "name": "Stade",                 // Stadtname
+    "region": "Niedersachsen",       // Bundesland / Region
+    "country": "Germany",            // Land
+    "lat": 53.6,                    // geografische Breite (Latitude)
+    "lon": 9.4833,                  // geografische Länge (Longitude)
+    "tz_id": "Europe/Berlin",        // Zeitzone
+    "localtime_epoch": 1755620949,  // Lokale Zeit als Unix-Timestamp
+    "localtime": "2025-08-19 18:29" // Lokale Uhrzeit (JJJJ-MM-TT HH:MM)
+  },
+  "current": {
+    "last_updated_epoch": 1755620100,  // Letzte Aktualisierung als Timestamp
+    "last_updated": "2025-08-19 18:15",// Letzte Aktualisierung (Datum & Uhrzeit)
+    "temp_c": 21,                      // Temperatur in °C
+    "temp_f": 69.8,                    // Temperatur in °F
+    "is_day": 1,                      // 1=Tag, 0=Nacht
+    "condition": {
+      "text": "Sunny",                // Wetterbeschreibung
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png", // Wetter-Icon
+      "code": 1000                   // Wetter-Code (für die API intern)
+    },
+    "wind_mph": 10.5,                 // Windgeschwindigkeit in mph (Meilen pro Stunde)
+    "wind_kph": 16.9,                 // Windgeschwindigkeit in km/h
+    "wind_degree": 313,               // Windrichtung in Grad (0-360)
+    "wind_dir": "NW",                 // Windrichtung als Text (Nordwest)
+    "pressure_mb": 1013,              // Luftdruck in Millibar
+    "pressure_in": 29.91,             // Luftdruck in Zoll (inch)
+    "precip_mm": 0,                   // Niederschlag in Millimeter
+    "precip_in": 0,                   // Niederschlag in Zoll
+    "humidity": 69,                   // Luftfeuchtigkeit in Prozent
+    "cloud": 0,                      // Bewölkung in Prozent (0 = klar)
+    "feelslike_c": 21,               // Gefühlte Temperatur in °C
+    "feelslike_f": 69.8,             // Gefühlte Temperatur in °F
+    "windchill_c": 18.7,             // Windchill (Kühleffekt) in °C
+    "windchill_f": 65.6,             // Windchill in °F
+    "heatindex_c": 18.7,             // Hitzeindex in °C (gefühlte Temperatur bei Hitze)
+    "heatindex_f": 65.6,             // Hitzeindex in °F
+    "dewpoint_c": 13.4,              // Taupunkt in °C
+    "dewpoint_f": 56,                // Taupunkt in °F
+    "vis_km": 10,                    // Sichtweite in Kilometern
+    "vis_miles": 6,                  // Sichtweite in Meilen
+    "uv": 1,                        // UV-Index (0 = niedrig)
+    "gust_mph": 13.9,                // Böen in mph
+    "gust_kph": 22.4,                // Böen in km/h
+    "air_quality": {                 // Luftqualitätsdaten
+      "co": 271.95,                 // Kohlenmonoxid (CO) in μg/m³
+      "no2": 2.96,                  // Stickstoffdioxid (NO2)
+      "o3": 90,                     // Ozon (O3)
+      "so2": 0.37,                  // Schwefeldioxid (SO2)
+      "pm2_5": 6.66,                // Feinstaubpartikel unter 2,5 μm
+      "pm10": 10.175,               // Feinstaubpartikel unter 10 μm
+      "us-epa-index": 1,            // US-Luftqualitätsindex (1 = gut)
+      "gb-defra-index": 1           // UK-Luftqualitätsindex (1 = gut)
+    },
+    "short_rad": 581.02,             // Strahlung (Solar) - kurzwellige Strahlung (W/m²)
+    "diff_rad": 77.86,               // Diffuse Strahlung (W/m²)
+    "dni": 801.8,                   // Direkt normaler Strahlungswert (W/m²)
+    "gti": 71.24                   // Globalstrahlung (W/m²)
+  }
+}
