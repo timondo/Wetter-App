@@ -1,7 +1,8 @@
 async function getData() {
-const ortInput = document.getElementById('input');
-const ort = ortInput.value.trim();
-const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b71140111251908&q=${ort}&aqi=yes`;
+  const ortInput = document.getElementById('input');
+  const ort = ortInput.value.trim();
+  const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b71140111251908&q=${ort}&aqi=yes`;
+
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -11,18 +12,18 @@ const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b711
     const result = await response.json();
 
     const data = {
-        ort: result.location.name,
-        bundesland : result.location.region,
-        wind : result.current.wind_kph,
-        Temperatur : result.current.feelslike_c,
-        Wolken : result.current.cloud
+      ort: result.location.name,
+      bundesland: result.location.region,
+      wind: result.current.wind_kph,
+      temperatur: result.current.feelslike_c,
+      wolken: result.current.cloud
     };
 
     document.getElementById('Ort').innerHTML = "Ort: " + data.ort;
     document.getElementById('Bundesland').innerHTML = "Bundesland: " + data.bundesland;
     document.getElementById('Wind').innerHTML = "Windgeschwindigkeit: " + data.wind + " km/h";
-    document.getElementById('Temperatur').innerHTML = "Temperatur: " + data.Temperatur + " °";
-    document.getElementById('Wolken').innerHTML = "Wolken: " + data.Wolken + " %";
+    document.getElementById('Temperatur').innerHTML = "Temperatur: " + data.temperatur + " °C";
+    document.getElementById('Wolken').innerHTML = "Wolken: " + data.wolken + " %";
 
   } catch (error) {
     console.error(error.message);
@@ -33,4 +34,3 @@ const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b711
     document.getElementById('Wolken').innerHTML = "Wolken: Beim Laden ist ein Fehler aufgetreten";
   }
 }
-{}
