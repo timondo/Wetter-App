@@ -1,7 +1,7 @@
 async function getData() {
   const ortInput = document.getElementById('input');
   const ort = ortInput.value.trim();
-  const url = `https://api.weatherapi.com/v1/current.json?key=e7609d1c62394f80b71140111251908&q=${ort}&aqi=yes`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=53e0f843dc5d47fcb34162857252008&q=${ort}&aqi=yes`;
 
   try {
     const response = await fetch(url);
